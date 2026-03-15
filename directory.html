@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>jan ilo Sape</title>
+
+<link href="/style.css" rel="stylesheet" type="text/css" media="all">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Smythe&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div class="banner">
+  <img src="https://file.garden/abX3AVUCxxVrCMhe/header.jpg" alt="a dark green background with cream colored flowers">
+</div>
+  
+
+<header>
+
+  
+
+  <h1><img class="image-container" src="https://file.garden/abX3AVUCxxVrCMhe/plant3.gif" alt="a potted plant"> jan ilo Sape <img class="image-container" src="https://file.garden/abX3AVUCxxVrCMhe/plant5.gif" alt="a sparkling leaf"></h1>
+  
+  
+  
+  <nav>
+  <a class="headerlinks" href="/index.html">home </a> ‎ ‎ ‎ ‎ 
+  <a class="headerlinks" href="/art.html">art </a> ‎ ‎ ‎ ‎ 
+  <a class="headerlinks" href="/blog.html">blog </a> ‎ ‎ ‎ ‎ 
+  <a class="headerlinks" href="/directory.html">directory </a> ‎ ‎ ‎ ‎ 
+
+</nav>
+
+
+</header>
+
+<div class="page">
+
+<div class="container">
+  <aside class="sidebar left">
+    <center>
+      
+      <img class="image-center2" src="https://file.garden/abX3AVUCxxVrCMhe/jasper_custom_render_2026-03-12T23_29_41.980Z(1).png" alt="a mii in a green shirt">
+<br><br>
+
+      <img class="image-center2" src="https://file.garden/abX3AVUCxxVrCMhe/jasper_custom_render_2026-03-13T20_57_30.823Z(1).png" alt="mii in a green shirt winking">
+<br><br>
+    </center>
+  </aside>
+
+  <main id="main-content" tabindex="-1">
+    <center>
+
+
+<h2> ★ directory</h2>
+<sup>a.k.a. site map</sup>
+<p>this is a (somewhat) organized archive of every page on this website. if a link is bright green, that means the page it links to has not yet been created.</p>
+<br>
+
+
+<div class="boxy-box">
+
+
+
+
+    <h3>main</h3>
+
+<a href="/home.html"> home</a><br>
+<a href="/art.html"> art</a><br>
+<a href="/blog.html"> blog</a><br>
+<a href="/directory.html"> directory</a>
+
+</div><br>
+
+<div class="boxy-box">
+<h3>javascript</h3>
+<a class="tba-text" href="/other/javascript/game1.html"> game</a><br>
+<a class="tba-text" href="/other/javascript/piano.html"> the infamous gayass piano...</a>
+</div>
+<br>
+
+<div class="boxy-box">
+<h3>shrines</h3>
+<a class="tba-text" href="/other/shrines/3ds.html"> nintendo 3ds</a><br>
+<a class="tba-text" href="/other/shrines/spock.html"> spock</a><br>
+<a class="tba-text" href="/other/shrines/chekov.html"> chekov</a><br>
+<a class="tba-text" href="/other/shrines/mymy.html"> mymy</a><br>
+<a class="tba-text" href="/other/shrines/millipede.html"> millipedes</a><br>
+<a class="tba-text" href="/other/shrines/tokipona.html"> toki pona</a><br>
+<a class="tba-text" href="/other/shrines/norsk.html"> norwegian</a><br>
+<a class="tba-text" href="/other/shrines/splatoon.html"> splatoon</a>
+</div>
+<br>
+<div class="boxy-box">
+<h3>miscellaneous</h3>
+<a class="tba-text" href="/other/misc/resources.html"> resources</a><br>
+<a class="tba-text" href="/other/misc/kinlist.html"> kin list</a><br>
+<a class="tba-text" href="other/misc/media.html"> media i like</a><br>
+<a class="tba-text" href="/other/misc/shitpost.html"> shitpost collection</a>
+</div>
+<br>
+
+</div>
+<br>
+
+</center>
+  </main>
+</div>
+</div>
+
+</body>
+</html>
+
+<script>
+  (function () {
+    const container = document.querySelector('.container');
+    if (!container) return;
+    const sidebar = container.querySelector('.sidebar');
+    const main = container.querySelector('main');
+    if (!sidebar || !main) return;
+
+    function updateSidebarHeight() {
+      const h = Math.ceil(sidebar.getBoundingClientRect().height);
+      container.style.setProperty('--sidebar-height', h + 'px');
+    }
+
+    if (typeof ResizeObserver !== 'undefined') {
+      const ro = new ResizeObserver(updateSidebarHeight);
+      ro.observe(sidebar);
+    }
+
+    window.addEventListener('load', updateSidebarHeight);
+    window.addEventListener('resize', updateSidebarHeight);
+  })();
+</script>
