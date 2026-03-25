@@ -1,0 +1,301 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Smythe;
+
+  background-image: url("https://file.garden/abX3AVUCxxVrCMhe/bgmymy.jpg");
+  background-repeat: repeat;
+
+  padding: 20px;
+  overscroll-behavior: none;
+  
+  
+}
+
+html {
+  font-size: 200%;
+  overscroll-behavior: none;
+}
+
+/* banner container */
+.banner {
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: -20px;
+  margin-bottom: 0;
+  height: 300px;
+  overflow: hidden;
+}
+
+/* banner */
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; 
+  display: block;
+  border-radius: 0; 
+  
+}
+
+/* responsive shit for banner */
+@media (max-width: 768px) {
+  .banner {
+    height: 200px; 
+  }
+}
+
+/* header */
+header {
+  background-image: linear-gradient(to bottom, rgb(255, 121, 121), rgba(238, 161, 18, 0.43)); 
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 0px;
+
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+/* buttons in da header */
+.headerlinks {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: rgba(231, 57, 57, 0.497);
+  border-radius: 40px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background 0.3s;
+  
+}
+
+.headerlinks:hover {
+  background-color: rgba(252, 199, 106, 0.8);
+}
+
+
+/* wrap */
+.page {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px; 
+}
+
+/* layout */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
+  color: rgb(188, 109, 109);
+  min-width: 500px;
+  align-items: start;
+  min-height: 0;
+}
+
+/* sidebar */
+.sidebar {
+  background: #e8eddd00;
+  padding: 20px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  padding: 20px;
+  min-width: 0;
+  border-radius: 20px;
+}
+
+/* main */
+main {
+  background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 239, 239)); 
+  padding: 20px;
+  outline: 4px solid rgb(188, 109, 109);
+  outline-offset: -10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  padding: 20px;
+  min-width: 0;
+  border-radius: 20px;
+  min-height: 0;
+  overflow-y: auto;
+  max-height: var(--sidebar-height, none);
+  overscroll-behavior: none;
+}
+
+
+/* font */
+.smythe-regular {
+  font-family: "Smythe", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* indent text */
+.indented-link {
+    margin-left: 2em;
+}
+
+.tba-text {
+
+color: rgb(188, 109, 109);
+
+}
+
+.muted-text {
+
+color: rgb(188, 109, 109);
+
+}
+
+
+/* honestly forgot why i put this here but i am keeping it */
+header h1 {
+  margin-bottom: 10px;
+}
+
+
+/*  pixels, flags */
+.image-container {
+  height: 40px; 
+  opacity: 0.8;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+/* art on homepage */
+.image-center {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  opacity: 0.8;
+  border-radius: 5%;
+}
+
+.image-center img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  opacity: 0.8;
+}
+
+
+/* mii image */
+.image-center2 {
+  width: 120%;
+  height: auto;
+  overflow: auto;
+  opacity: 0.8;
+  -webkit-filter: 
+      drop-shadow(0 0 8px rgb(255, 121, 121))
+      drop-shadow(2px 1px 0 rgb(255, 121, 121))
+      drop-shadow(-1px -1px 0 rgb(255, 121, 121));
+  filter: 
+      drop-shadow(0 0 8px rgb(255, 121, 121))
+      drop-shadow(2px 1px 0 rgb(255, 121, 121))
+      drop-shadow(-1px -1px 0 rgb(255, 121, 121));
+}
+
+.image-center2 img {
+  width: 120%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  opacity: 0.8;
+}
+
+
+
+/* mii image */
+.image-center3 {
+  width: 120%;
+  height: auto;
+  overflow: auto;
+  -webkit-filter: 
+      drop-shadow(0 0 8px rgb(255, 255, 255))
+      drop-shadow(2px 1px 0 rgb(255, 255, 255))
+      drop-shadow(-1px -1px 0 rgb(255, 255, 255));
+  filter: 
+      drop-shadow(0 0 8px rgb(255, 255, 255))
+      drop-shadow(2px 1px 0 rgb(255, 255, 255))
+      drop-shadow(-1px -1px 0 rgb(255, 255, 255));
+}
+
+.image-center3 img {
+  width: 120%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* highlight colors */
+::selection {
+  background: rgb(188, 109, 109);
+  color: #ffffff; 
+}
+
+/* firefox */
+::-moz-selection {
+  background: #788b6b;
+  color: #e8eddd;
+}
+
+
+/* light box for text */
+.boxy-box {
+  border: 4px solid #eea9a9;
+  box-shadow: 0 0 10px #eed1d1;
+  border: 2px solid #fce5e5;
+  background-color:#f3eaea;
+  border-radius: 15px;
+  
+  padding: 10px;;
+  width: 90%;
+}
+
+
+/* links */
+a {
+    color: #adb69a;   
+    text-decoration: none; 
+}
+
+a:hover {
+
+color:#5f1c36;
+
+}
+
+
+/* accessibility */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 10px;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 10px;
+  outline: 2px solid #fff;
+}
+
